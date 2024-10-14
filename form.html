@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <legend>聯絡資料</legend>
+            <!-- method: post, get -->
+            <label for="a_name">姓名</label>
+            <input type="text" name="name" id="a_name" placeholder="請輸入中文姓名" required>
+            <!-- name='john' -->
+            <br>
+            <label for="a_email">email</label>
+            <input type="email" name="email" id="a_email">
+            <!-- email='asdf@gmail.com' -->
+            <br>
+            <label for="a_phone">電話</label>
+            <input type="text" name="phone" id="a_phone">
+            <br>
+            <label for="birth">生日</label>
+            <input type="date" name="birth" id="birth" value="1999-01-11" readonly>
+            <br>
+            <label for="">數量</label>
+            <input type="number" name="" id="" min="1" max="4">
+            <br>
+            <label for="">密碼</label>
+            <input type="password" name="" id="">
+            <br>
+            
+            <label for="">性別</label>
+            
+            <input type="radio" name="gender" id="male" value="男">
+            <label for="male">男</label>
+            
+            <input type="radio" name="gender" id="female" value="女">
+            <label for="female">女</label>
+
+            <input type="radio" name="gender" id="other" value="其他">
+            <label for="other">其他</label>
+            
+            <!-- gender='男' or gender='女' -->
+            <br>
+            <label for="">多選</label>
+
+            <input type="checkbox" name="test[]" id="A" value="A">
+            <label for="A">A</label>
+
+            <input type="checkbox" name="test[]" id="B" value="B">
+            <label for="B">B</label>
+
+            <input type="checkbox" name="test[]" id="C" value="C">
+            <label for="C">C</label>
+
+            <input type="checkbox" name="test[]" id="D" value="D">
+            <label for="D">D</label>
+            <br>
+            <label for="edu">學歷</label>
+            <select name="edu" id="edu">
+                <option value="國小">國小</option>
+                <option value="國中">國中</option>
+                <option value="高中職">高中職</option>
+                <option value="大專院校">大專院校</option>
+            </select>
+            <br>
+            <label for="content">內容</label>
+            <textarea name="content" id="content" rows="10" cols="55"></textarea>
+            <br>
+            
+            <input type="submit" value="送出">
+            <input type="reset" value="清除">
+            <input type="button" value="自訂義">
+            <br>
+            <button type="submit">送出</button>
+            <button type="reset">清除</button>
+            <button type="button">自訂義</button>
+            <button>自訂義</button>
+        </fieldset>
+    </form>
+    <!-- <script>
+        const form = document.querySelector('form');
+        // console.log(form.elements);
+
+        [...form.elements].forEach((item) => {
+            console.log(item);
+        });
+    </script> -->
+</body>
+</html>
