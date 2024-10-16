@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* @import url('style.css'); */
+        h1 {
+            color:#3af177;
+        }
+        .qqq {
+            color:#e7ff7b
+        }
+        .abc {
+            color: #fa0;
+        }
+
+        #xyz {
+            color: skyblue
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        cascading style sheet
+        串接樣式表、層遞樣式表
+
+        樣式表分類
+        1.嵌入式
+        2.內部
+        3.外部
+
+        選取器selector
+        1.標籤tag
+        2.類別class 可重複使用
+        3.ID 不可重複使用
+
+        權重
+        影響元素愈少，權重愈重，愈優先套用
+        !important > 嵌入樣式 > id > class > tag
+
+        順序
+
+        當CSS衝突時，先檢查權重再檢查順序(建議)
+    -->
+    <h1 class="abc qqq">Hello CSS</h1>
+    <h1>Hello CSS</h1>
+    <h1 id="xyz" class="abc" style="color:crimson">Hello CSS</h1>
+    <h1>Hello CSS</h1>
+    <h1>Hello CSS</h1>
+    <p style="color: purple;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae optio expedita atque, labore accusamus itaque quibusdam, et officiis cumque quae nisi ullam blanditiis eius recusandae necessitatibus vitae eum iusto! Nihil!
+    </p>
+    <p class="abc">
+        界面每頁有權保持水溝故障成人，青年問道我都傷害笑道以便練習留學如果您幽默戀愛五金友情連結，政治一部分無人創新百萬咖啡，家園難以減肥等等狀況家裡一副會不會發表森林因為理想，農民顯得液晶人體下午快速關鍵因為字元這次台中規定專題完全，點擊數我和農村功能開發商溝。
+    </p>
+    <ul>
+        <li>list</li>
+        <li>list</li>
+        <li class="abc">list</li>
+        <li class="abc">list</li>
+    </ul>
+</body>
+</html>
